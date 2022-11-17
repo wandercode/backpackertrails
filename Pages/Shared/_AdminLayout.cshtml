@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Clickaholic</title>
+    <title>BackPackerTrails</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700|Playfair+Display:400,700,900" rel="stylesheet">
@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/countdown.css">
+    
 
 </head>
 
@@ -31,7 +33,6 @@
         <section class="footer-top">
             <!--Container-->
             <div class="container">
-                <h2>My Flickr Feed</h2>
                 <div class="row text-center text-lg-left">
                     <div class="col-lg-2 col-md-4 col-xs-6">
                         <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/banner-image-1.jpg" alt=""></a>
@@ -61,17 +62,15 @@
                 <div class="row">
                     <div class="col-md-12">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a asp-area="" asp-page="/Index">Home</a></li>
                             <li class="hidden">/</li>
-                            <li><a href="about.html">About-us</a></li>
+
+                            <li><a asp-area="" asp-page="/Gallery">Gallery</a></li>
                             <li class="hidden">/</li>
-                            <li><a href="mystories.html">My stories</a></li>
-                            <li class="hidden">/</li>
-                            <li><a href="destinations.html">Destinations</a></li>
-                            <li class="hidden">/</li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li class="hidden">/</li>
-                            <li><a href="contact.html">Contact</a></li>
+                           
+                            <li><a asp-area="" asp-page="/Blog">TravelBlog</a></li>
+                            
+                            
                         </ul>
                     </div>
                     <div class="col-md-12">
@@ -94,6 +93,7 @@
     <!-- Custom JavaScript -->
     <script src="js/animate.js"></script>
     <script src="js/custom.js"></script>
+    
     <script>
         $(document).on('click', '[data-toggle="lightbox"]', function(event) {
             event.preventDefault();

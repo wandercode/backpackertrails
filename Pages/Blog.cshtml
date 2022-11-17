@@ -1,0 +1,134 @@
+@page
+@model BlogModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!doctype html>
+<html lang="en">
+
+<body>
+   
+    <!--Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark cyan fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+            <img src="images/nav-logo.png" alt="nav-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+                <ul class="navbar-nav ml-auto">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-page="/Index">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-page="/Gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" asp-area="" asp-page="/Blog">TravelBlog</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--/.Navbar -->
+    <!-- Blog-Section -->
+<section class="blog-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 left-side">
+                    <h2>My Recent Blog Posts</h2>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <figure class="figure">
+                                <a href="../About"><img src="images/banner-image-1.jpg" class="figure-img img-fluid" alt="A generic square placeholder image with rounded corners in a figure."></a>
+                                <figcaption class="figure-caption"> <img src="images/comment.png" alt=""><span>45</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-9">
+                            <h4><a href="../About">Kasol:Mystic Riverside Hill Town in Himalayan Valley</a></h4>
+                            <div class="btn-group">
+                                <a href="single.html" class="btn btn-danger">Kasol, India</a>
+                                <button class="btn btn-primary"><i class="fa fa-eye" aria-hidden="true"></i> 345</button>
+                            </div>
+                            <p>Posted on : 23.05.2016</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <figure class="figure">
+                                <a href="../About"><img src="images/banner-image-2.jpg" class="figure-img img-fluid" alt="A generic square placeholder image with rounded corners in a figure."></a>
+                                <figcaption class="figure-caption"> <img src="images/comment.png" alt=""><span>45</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-9">
+                            <h4><a href="../About">Vagamon: Hidden Gem Of Idukki With A Box Full Of Magic </a></h4>
+                            <div class="btn-group">
+                                <a href="single.html" class="btn btn-danger">Vagamon, India</a>
+                                <button class="btn btn-primary"><i class="fa fa-eye" aria-hidden="true"></i> 345</button>
+                            </div>
+                            <p>Posted on : 23.05.2016</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <figure class="figure">
+                                <a href="../About"><img src="images/banner-image-3.jpg" class="figure-img img-fluid" alt="A generic square placeholder image with rounded corners in a figure."></a>
+                                <figcaption class="figure-caption"> <img src="images/comment.png" alt=""><span>45</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-9">
+                            <h4><a href="../About"></a>Streams of Wonders : Ernakulam Paddies </h4>
+                            <div class="btn-group">
+                                <a href="single.html" class="btn btn-danger">Keecheri, India</a>
+                                <button class="btn btn-primary"><i class="fa fa-eye" aria-hidden="true"></i> 345</button>
+                            </div>
+                            <p>Posted on : 23.05.2016</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <figure class="figure">
+                                <a href="../About"><img src="images/banner-image-4.jpg" class="figure-img img-fluid" alt="A generic square placeholder image with rounded corners in a figure."></a>
+                                <figcaption class="figure-caption"><img src="images/comment.png" alt=""><span>45</span>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-9">
+                            <h4><a href="../About">Hippie Heaven: A Lake Town Walled with Hills and Desert</a></h4>
+                            <div class="btn-group">
+                                <a href="single.html" class="btn btn-danger">Pushkar, India</a>
+                                <button class="btn btn-primary"><i class="fa fa-eye" aria-hidden="true"></i> 345</button>
+                            </div>
+                            <p>Posted on : 23.05.2016</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row bt">
+                <div class="col-sm-12">
+                    <ul>
+                        <li><a class="active" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!--/.Portfolio-Section -->
+    
+</body>
+
+</html>

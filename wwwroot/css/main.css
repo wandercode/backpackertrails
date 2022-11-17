@@ -124,7 +124,7 @@ hr {
 }
 
 #return-to-top:hover {
-    background: #f9e43f;
+    background: #117d09;
 }
 
 #return-to-top:hover i {
@@ -177,7 +177,7 @@ nav {
 
 .navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link,
 .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
-    color: #f9e43f;
+    color: #08FF08;
     background-color: rgba(255, 255, 255, .1);
 }
 
@@ -216,9 +216,9 @@ nav {
 .carousel-indicators li span {
     text-indent: 0;
     position: absolute;
-    width: 100%;
+    width: 50%;
     height: auto;
-    padding: 15px 20px;
+    padding: 0px 0px;
     line-height: 20px;
     bottom: 0;
     border: none;
@@ -376,7 +376,7 @@ nav {
     width: 94.8%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(254, 253, 49, 0.80);
+    background-color: rgba(110, 110, 89, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -392,7 +392,7 @@ nav {
     width: 90%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(254, 253, 49, 0.80);
+    background-color: rgba(110, 110, 89, 0.80);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -447,14 +447,22 @@ nav {
 ====================*/
 
 .blog {
+
+    background-image: url('../images/imageedit_10_6575123399.png');
+    
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: auto;
     padding: 50px 0;
     font-family: 'Playfair Display', serif;
+ 
 }
 
+
 .blog .left-side h2 {
-    color: #959595;
+    color: #363636;
     text-align: left;
     font-size: 36px;
     padding-bottom: 30px;
@@ -495,6 +503,21 @@ nav {
     top: 0;
     right: 0;
 }
+
+.blog .right-side big{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.1cm;
+}
+
+.multicolortext {
+    background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
 
 .left-side figcaption img {
     width: 63px;
@@ -691,13 +714,13 @@ footer .footer-bottom ul li a {
 }
 
 footer .footer-bottom p {
-    font-size: 16px;
+    font-size: 13px;
     letter-spacing: 1px;
 }
 
 footer .footer-bottom p a {
-    color: #fce000;
-    font-size: 16px;
+    color: #08FF08;
+    font-size: 13px;
     letter-spacing: 0.5px;
     text-decoration: underline;
 }
@@ -1436,8 +1459,9 @@ footer .img-thumbnail {
 .about-page {
     width: 100%;
     height: auto;
-    padding-top: 120px;
-    padding-bottom: 200px;
+    padding-top: 220px;
+    padding-bottom: 280px;
+    
 }
 
 .about-page h3 {
@@ -1461,10 +1485,11 @@ footer .img-thumbnail {
     font-size: 20px;
     font-weight: 400;
     line-height: 35px;
-    color: #707070;
-    text-align: left;
+    color:black;
+    text-align:center;
     padding-bottom: 30px;
     font-family: 'Playfair Display', serif;
+    font-style: italic;
 }
 
 .about-page p a {
